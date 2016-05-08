@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hearthstone-deck-tracker</id>
+    <title>Hearthstone-Deck-Tracker</title>
+    <version>0.14.7</version>
+    <authors>Epix37</authors>
+    <owners>scowalt</owners>
+    <summary>An automatic deck tracker and manager for Hearthstone</summary>
+    <description>- **Tracks**:
+  - Cards left in your deck or cards drawn from your deck.
+  - Your handcount, deckcount and draw chances.
+  - Cards played by your opponent.
+  - Your opponent's handcount, deckcount and probablities of him having/drawing cards.
+  - How long your opponent had each card in his hand and what cards have been mulliganed, stolen or returned.
+- **Timer** for the current turn and total time spent for you and your opponent.
+- The tracker tries to **automatically select the deck you are playing**.
+- The cards and timer can either be displayed in an overlay (see screenshot) or in **extra windows** (Options > General > Additional Windows)
+- **Deck Manager**:
+  - **Import** decks from websites: arenavalue, hearthstats, hearthpwn, hearthhead, hearthstoneplayers, tempostorm, hearthstonetopdeck and hearthnews
+  - Circumvent the 9 deck limit: Saved decks can be **exported to Hearthstone**. (My Decks > More...)
+  - Decks can be filtered by custom **tags** and sorted by name, date and tags.
+  - Set **notes** for each deck (My Decks > More...)
+  - Create **screenshots** of decks (My Decks > More...)
+  - **Share** your decks by exporting them as xml files or id-strings (My Decks > More...). Both can be imported via New Deck > Import.
+- **Notifications**: get notified when a game or a turn starts (either by the tray icon flashing or hearthstone popping up)
+- **Customization**: Almost every feature can be turned on/off separately.
+- **Stats per deck**:
+  - Track the result of each game (win/loss), opponents, game mode and more
+  - Win/loss rate vs each class.
+  - Details for each game (cards drawn, played, etc.).
+  - Select which game modes to track (Options > Other).
+  - Import your opponent's (partial) deck from a tracked game as a new deck.
+    </description>
+    <projectUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker</projectUrl>
+    <packageSourceUrl>https://github.com/scowalt/chocolatey-Hearthstone-Deck-Tracker</packageSourceUrl>
+    <projectSourceUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker</projectSourceUrl>
+    <docsUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/issues</bugTrackerUrl>
+    <tags>hearthstone-deck-tracker hearthstone</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/tree/master/licenses</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/HearthSim/Hearthstone-Deck-Tracker/master/Hearthstone%20Deck%20Tracker/Images/HearthstoneDeckTracker.ico</iconUrl>
+    <releaseNotes>- Fixed an issue where cards in brawl would be treated as created and therefore removed from the list after played from hand.
+- Fixed an issue where auto deck detection would not trigger in brawl for the same reason.
+- Fixed an issue where no secret list would be shown for secrets created in play.
+- Fixed an issue where exporting decks to Hearthstone would not work for the Chinese client.
+- Fixed a few issues with the C'Thun counter, it should be a bit more consistent now.
+- This hopefully fixes an issue where MalwareBytes would flag HDT as a false positive. Not really sure what that was about, you can read more here: #2413
+</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
