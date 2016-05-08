@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>hearthstone-deck-tracker</id>
-    <title>Hearthstone-Deck-Tracker</title>
+    <title>Hearthstone Deck Tracker</title>
     <version>0.14.7</version>
     <authors>Epix37</authors>
     <owners>scowalt</owners>
