@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>hearthstone-deck-tracker-arena-helper</id>
+    <title>Arena Helper</title>
+    <version>0.8.0</version>
+    <authors>rembound</authors>
+    <owners>scowalt</owners>
+    <summary>Arena Helper is a plugin for Hearthstone Deck Tracker that helps drafting Hearthstone arena decks by showing an overlay with card values from a tier list.</summary>
+    <description>Arena Helper is a plugin for Hearthstone Deck Tracker that helps drafting Hearthstone arena decks by showing an overlay with card values from a tier list. The plugin tries to visually detect the arena heroes and card choices. Detected cards are displayed alongside the value of the card, that is specified in The Lightforge: Hearthstone Arena Tier List. The created deck can be saved to Hearthstone Deck Tracker.
+    </description>
+    <projectUrl>https://github.com/rembound/Arena-Helper</projectUrl>
+    <packageSourceUrl>https://github.com/scowalt/chocolatey-Hearthstone-Deck-Tracker</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/rembound/Arena-Helper/issues</bugTrackerUrl>
+    <tags>hearthstone-deck-tracker-arena-helper hearthstone-deck-tracker hearthstone</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="hearthstone-deck-tracker" />
+    </dependencies>
+    <releaseNotes> - Added an auto updater that downloads and installs new versions of the plugin.
+ - Updated dialog messages.
+ - Alternative Mage portrait, Khadgar, hashes added.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
