@@ -4,11 +4,13 @@
   <metadata>
     <id>hearthstone-deck-tracker</id>
     <title>Hearthstone Deck Tracker</title>
-    <version>0.14.7</version>
+    <version>0.14.8</version>
     <authors>Epix37</authors>
     <owners>scowalt</owners>
     <summary>An automatic deck tracker and manager for Hearthstone</summary>
-    <description>- **Tracks**:
+    <description>An automatic deck tracker and manager for Hearthstone
+
+- **Tracks**:
   - Cards left in your deck or cards drawn from your deck.
   - Your handcount, deckcount and draw chances.
   - Cards played by your opponent.
@@ -35,7 +37,6 @@
     </description>
     <projectUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker</projectUrl>
     <packageSourceUrl>https://github.com/scowalt/chocolatey-Hearthstone-Deck-Tracker</packageSourceUrl>
-    <projectSourceUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker</projectSourceUrl>
     <docsUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/issues</bugTrackerUrl>
     <tags>hearthstone-deck-tracker hearthstone</tags>
@@ -43,13 +44,28 @@
     <licenseUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/tree/master/licenses</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/HearthSim/Hearthstone-Deck-Tracker/master/Hearthstone%20Deck%20Tracker/Images/HearthstoneDeckTracker.ico</iconUrl>
-    <releaseNotes>- Fixed an issue where cards in brawl would be treated as created and therefore removed from the list after played from hand.
-- Fixed an issue where auto deck detection would not trigger in brawl for the same reason.
-- Fixed an issue where no secret list would be shown for secrets created in play.
-- Fixed an issue where exporting decks to Hearthstone would not work for the Chinese client.
-- Fixed a few issues with the C'Thun counter, it should be a bit more consistent now.
-- This hopefully fixes an issue where MalwareBytes would flag HDT as a false positive. Not really sure what that was about, you can read more here: #2413
-</releaseNotes>
+    <releaseNotes>**New:**
+ - Added an option to include deck name, format, cost, and more in the deck screenshot ( EXPORT > SCREENSHOT (WITH INFO) ).
+ - Added support for importing decks from manacrystals.com.
+ - Added a "select deck" button to the constructed matches list.
+
+**Changes:**
+ - Greatly improved the way the Hearthstone installation is detected.
+ - The deck version panel is now collapsed by default when editing a deck.
+
+**Fixes:**
+ - Fixed an issue where the wild filter would apply when creating an arena deck.
+ - Fixed an issue where Mind Controlling opponent cards would sometimes remove them from the player deck.
+ - Fixed an issue where cards from the Promo and Reward sets would still show up when filtering for "standard only" cards.
+ - Fixed an issue where the opponent Yogg-Saron counter would not be visible when enabled.
+ - Fixed an issue where the last played date (and deck sorting, if applicable) would not update in some cases.
+ - Fixed an issue where loading certain old replay files would crash HDT.
+ - Fixed an issue where the latest deck version would be missing from the deck matchup statistics table.
+ - Fixed several minor issue in constructed and arena statistics.
+
+**API:**
+ - Added  GameEvents.PlayToGraveyard
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
