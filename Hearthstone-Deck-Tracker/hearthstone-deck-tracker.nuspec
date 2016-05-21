@@ -4,7 +4,7 @@
   <metadata>
     <id>hearthstone-deck-tracker</id>
     <title>Hearthstone Deck Tracker</title>
-    <version>0.14.8</version>
+    <version>0.14.9</version>
     <authors>Epix37</authors>
     <owners>scowalt</owners>
     <summary>An automatic deck tracker and manager for Hearthstone</summary>
@@ -44,27 +44,8 @@
     <licenseUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/tree/master/licenses</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/HearthSim/Hearthstone-Deck-Tracker/master/Hearthstone%20Deck%20Tracker/Images/HearthstoneDeckTracker.ico</iconUrl>
-    <releaseNotes>**New:**
- - Added an option to include deck name, format, cost, and more in the deck screenshot ( EXPORT > SCREENSHOT (WITH INFO) ).
- - Added support for importing decks from manacrystals.com.
- - Added a "select deck" button to the constructed matches list.
-
-**Changes:**
- - Greatly improved the way the Hearthstone installation is detected.
- - The deck version panel is now collapsed by default when editing a deck.
-
-**Fixes:**
- - Fixed an issue where the wild filter would apply when creating an arena deck.
- - Fixed an issue where Mind Controlling opponent cards would sometimes remove them from the player deck.
- - Fixed an issue where cards from the Promo and Reward sets would still show up when filtering for "standard only" cards.
- - Fixed an issue where the opponent Yogg-Saron counter would not be visible when enabled.
- - Fixed an issue where the last played date (and deck sorting, if applicable) would not update in some cases.
- - Fixed an issue where loading certain old replay files would crash HDT.
- - Fixed an issue where the latest deck version would be missing from the deck matchup statistics table.
- - Fixed several minor issue in constructed and arena statistics.
-
-**API:**
- - Added  GameEvents.PlayToGraveyard
+    <releaseNotes> - Fixed an issue where arena card rewards would not be saved since v0.14.8.
+ - Fixed an issue where the format filter for constructed games would apply to other modes.
     </releaseNotes>
   </metadata>
   <files>
