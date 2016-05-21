@@ -44,8 +44,8 @@
     <licenseUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/tree/master/licenses</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/HearthSim/Hearthstone-Deck-Tracker/master/Hearthstone%20Deck%20Tracker/Images/HearthstoneDeckTracker.ico</iconUrl>
-    <releaseNotes> - Fixed an issue where arena card rewards would not be saved since v0.14.8.
- - Fixed an issue where the format filter for constructed games would apply to other modes.
+    <releaseNotes>- Fixed an issue where arena card rewards would not be saved since v0.14.8.
+- Fixed an issue where the format filter for constructed games would apply to other modes.
     </releaseNotes>
   </metadata>
   <files>
