@@ -1,10 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
+$version    = '0.14.9'
 $packageName= 'Hearthstone Deck Tracker'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/HearthSim/Hearthstone-Deck-Tracker/releases/download/v0.14.8/Hearthstone.Deck.Tracker-v0.14.8.zip'
+$url        = "https://github.com/HearthSim/Hearthstone-Deck-Tracker/releases/download/v$version/Hearthstone.Deck.Tracker-v$version.zip"
 
-$desktop    = [Environment]::GetFolderPath("Desktop")
+$desktop    = [Environment]::GetFolderPath('Desktop')
 $shortcut   = Join-Path $desktop "$packageName.lnk"
 $unzipDir   = Split-Path -parent $MyInvocation.MyCommand.Definition
 $target     = Join-Path $unzipDir "$packageName\$packageName.exe"
