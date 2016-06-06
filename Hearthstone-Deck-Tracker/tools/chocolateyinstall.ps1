@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$version    = '0.14.9'
+$version    = '0.15.3'
 $packageName= 'Hearthstone Deck Tracker'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = "https://github.com/HearthSim/Hearthstone-Deck-Tracker/releases/download/v$version/Hearthstone.Deck.Tracker-v$version.zip"

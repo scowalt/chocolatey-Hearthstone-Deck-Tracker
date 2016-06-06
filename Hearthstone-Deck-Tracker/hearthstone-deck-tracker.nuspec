@@ -4,7 +4,7 @@
   <metadata>
     <id>hearthstone-deck-tracker</id>
     <title>Hearthstone Deck Tracker</title>
-    <version>0.14.9</version>
+    <version>0.15.3</version>
     <authors>Epix37</authors>
     <owners>scowalt</owners>
     <summary>An automatic deck tracker and manager for Hearthstone</summary>
@@ -44,8 +44,11 @@
     <licenseUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/tree/master/licenses</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/HearthSim/Hearthstone-Deck-Tracker/master/Hearthstone%20Deck%20Tracker/Images/HearthstoneDeckTracker.ico</iconUrl>
-    <releaseNotes>- Fixed an issue where arena card rewards would not be saved since v0.14.8.
-- Fixed an issue where the format filter for constructed games would apply to other modes.
+    <releaseNotes> - Fixed an issue where arena decks would be auto imported multiple times in some cases.
+ - Fixed an issue where deck screenshots would be distorted for low desktop resolutions.
+ - Fixed an issue where the rank filter in constructed stats would apply to non-ranked games.
+ - Fixed an issue where games with 0 turns/duration would skew the average constructed statistics.
+ - Fixed an issue where repeated importing/exporting of decks would add multiple trailing version numbers to the name in some cases.
     </releaseNotes>
   </metadata>
   <files>
