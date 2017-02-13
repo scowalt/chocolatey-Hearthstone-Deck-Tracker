@@ -4,7 +4,7 @@
   <metadata>
     <id>hearthstone-deck-tracker</id>
     <title>Hearthstone Deck Tracker</title>
-    <version>0.14.9</version>
+    <version>1.1.6</version>
     <authors>Epix37</authors>
     <owners>scowalt</owners>
     <summary>An automatic deck tracker and manager for Hearthstone</summary>
