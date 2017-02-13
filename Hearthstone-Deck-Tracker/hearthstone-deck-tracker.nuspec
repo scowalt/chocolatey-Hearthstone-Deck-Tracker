@@ -44,8 +44,14 @@
     <licenseUrl>https://github.com/HearthSim/Hearthstone-Deck-Tracker/tree/master/licenses</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/HearthSim/Hearthstone-Deck-Tracker/master/Hearthstone%20Deck%20Tracker/Images/HearthstoneDeckTracker.ico</iconUrl>
-    <releaseNotes>- Fixed an issue where arena card rewards would not be saved since v0.14.8.
-- Fixed an issue where the format filter for constructed games would apply to other modes.
+    <releaseNotes>__New__:
+- Added an option to remove detected secrets instead of just greying them out.
+  - The option can be found under `options (advanced) > overlay > general`.
+
+__Fixes__:
+- Fixed an issue where cards revealed by Jousts would not be tracked.
+- Fixed an issue where HDT would crash when starting some brawls.
+- Fixed an issue where HDT would force no-deck mode when spectating.
     </releaseNotes>
   </metadata>
   <files>
